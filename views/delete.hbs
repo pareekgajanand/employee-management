@@ -1,0 +1,9 @@
+{{> header }}
+<h2 class="text-xl text-center mt-5"> Delete Employee </h2>
+<form action="/delete?_method=DELETE" method="post" class="flex flex-col gap-y-5 justify-center items-center w-full mt-5">
+    <input type="text" name="id" class="w-1/3 border p-2 rounded-md outline-none" placeholder="Enter employee id"
+        autocomplete="off" />
+    <input type="submit" value="Delete Employee"
+        class="bg-orange-700 hover:bg-orange-500 text-white p-3 rounded-md cursor-pointer" />
+</form>
+{{> footer}}

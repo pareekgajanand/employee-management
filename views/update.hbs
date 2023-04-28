@@ -1,0 +1,15 @@
+{{> header }}
+<h2 class="text-xl text-center mt-5"> Update Employee </h2>
+<form action="/update?_method=PUT" method="post" class="flex flex-col gap-y-5 justify-center items-center w-full mt-5">
+    <input type="text" name="id" class="w-1/3 border p-2 rounded-md outline-none" placeholder="Enter employee id"
+        autocomplete="off" />
+    <input type="text" name="name" class="w-1/3 border p-2 rounded-md outline-none" placeholder="Enter employee name"
+        autocomplete="off" />
+    <input type="text" name="email" class="w-1/3 border p-2 rounded-md outline-none" placeholder="Enter employee email id"
+        autocomplete="off" />
+    <input type="text" name="phone" class="w-1/3 border p-2 rounded-md outline-none" placeholder="Enter employee phone"
+        autocomplete="off" />
+    <input type="submit" value="Update Employee"
+        class="bg-orange-700 hover:bg-orange-500 text-white p-3 rounded-md cursor-pointer" />
+</form>
+{{> footer}}
